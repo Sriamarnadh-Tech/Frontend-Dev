@@ -1,0 +1,73 @@
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+
+-> Frontend Development deals with what the user sees and interacts with. 
+Example: The UI of facebook, the buttons, the colors, animations, everything comes under Frontend.
+Backend Development handles the behind the scenes communication between the client and the server. It includes database, authentication and server logic. 
+Example: When you log in to facebook and your data appears. That’s backend doing its job.
+Full-Stack Development deals with both - Frontend and Backend. 
+Example: A developer who designs the feed (frontend) and manages how posts are stored and retrieved (backend).
+
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
+
+->  client(Browser) <--response     request--> server(webapp)
+
+
+3. Describe how a browser requests and displays a web page from a web server.
+
+-> User enters URL in browser.
+   Browser resolves domain to IP address via DNS.
+   Browser sends HTTP request to server.
+   Server responds with HTML/CSS/JS; browser renders the page.
+
+4. Identify and list the tools required to set up a web development environment. Explain the
+purpose of each.
+
+-> To set up a web development environment, use a code editor like VS Code for coding with features such as syntax highlighting and debugging. Install Node.js to run JavaScript outside the browser and manage libraries via npm. Choose a browser like Chrome for testing and viewing web pages in real time. Use Git and GitHub for version control and collaboration on projects. Add the Live Server extension in VS Code for automatic page reloading during development.
+
+5. Explain what a web server is and give examples of commonly used servers.
+-> A web server is software (or hardware) that delivers web content to users over the internet when requested.
+# Common Web Servers:
+Apache HTTP Server
+Node.js (Express)
+
+
+6. Define the roles of a frontend developer, backend developer, and database administrator
+in a project.
+
+-> Frontend Developer: Designs and implements user interfaces, ensures responsive design, and handles user interactions. 
+Backend Developer: Builds and maintains server-side logic, connects to databases, handles APIs, authentication, etc. 
+Database Administrator (DBA): Manages database structure, ensures data integrity, security, backups, and performance.
+
+7.Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a
+screenshot of the setup.
+->
+
+
+8. Explain the difference between static and dynamic websites. Provide an example of
+each.
+->  A static website shows the same content to every visitor and only changes when the developer updates the files. These sites are fast, simple, and great for portfolios or company profiles. For example, a personal portfolio with your bio and contact info is a static site.
+
+A dynamic website, on the other hand, updates its content automatically based on user actions or stored data. It uses server-side languages like PHP, Python, or Node.js, and connects to databases such as MySQL. Examples include social media sites like Facebook or shopping platforms like Amazon, where content changes depending on the user. 
+
+
+9. Research and list five web browsers. Explain how rendering engines differ between
+them.
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server,
+database, and APIs.
+->                 HTTP                       Query                  
+       CLIENT     <----->      SERVER        <----->    DATABASE     
+     (Browser)    Request  (Backend Logic)    Result  (Data Storage) 
+             
+            |
+            |
+            v
+ 
+        APIs        
+     (Middleware /  
+      Third-party)  
+    
+
+
