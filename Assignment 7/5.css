@@ -1,0 +1,42 @@
+/* q5-selectors.css */
+/* Comments explain each selector type */
+
+/* Attribute selector: select inputs with type="text" */
+input[type="text"]{
+  border:2px solid #2b6cb0; /* styling only text inputs */
+  padding:8px;
+  margin:8px 0;
+  display:block;
+}
+
+/* Attribute selector with ^= match: links starting with https */
+a[href^="https"]{
+  font-weight:600; /* highlights secure links */
+  text-decoration:underline;
+}
+
+/* Pseudo-class :hover on links */
+a:hover{opacity:0.8;}
+
+/* Pseudo-class :focus on inputs */
+input:focus{outline:3px solid rgba(66,153,225,0.3);}
+
+/* nth-child demonstration: style every even list item */
+.items li:nth-child(even){background:#edf2f7; padding:6px;}
+
+/* pseudo-element ::before and ::after on list items */
+.items li::before{
+  content:"• ";
+  color:#2b6cb0;
+  font-weight:700;
+}
+
+/* Combinator examples */
+/* Child combinator > : targets direct child anchors inside .links */
+.links > li > a{padding:4px 0; display:inline-block;}
+
+/* Adjacent sibling + : style immediate sibling of certain element (example) */
+.items li:first-child + li{border-top:2px solid #e2e8f0;}
+
+/* General sibling ~ : style all siblings after the 2nd item */
+.items li:nth-child(2) ~ li{font-style:italic; color:#4a5568;}

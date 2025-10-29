@@ -1,0 +1,22 @@
+/* q7-typography.css */
+*{box-sizing:border-box;}
+body{margin:0; font-family: Georgia, 'Times New Roman', serif; color:#111; padding:32px; background:#fff;}
+.article{max-width:720px; margin:0 auto;}
+
+/* Headline styles with text settings */
+h1{font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-size:2rem; font-weight:700; line-height:1.15; letter-spacing:0.5px; margin-bottom:12px;}
+
+/* paragraph settings */
+p{font-size:1rem; line-height:1.7; margin:0 0 12px 0; letter-spacing:0.2px; text-align:justify;}
+
+/* mark, strong, em custom colors */
+mark{background:#fff176; padding:0 4px;}
+strong{color:#2b6cb0;}
+em{color:#d53f8c; font-style:italic;}
+
+/* ::first-letter and ::first-line */
+article p::first-letter{font-size:1.5em; font-weight:700; float:left; margin-right:6px;}
+article p::first-line{font-variant:small-caps;}
+
+/* small helper */
+.lead{font-size:1.05rem; font-weight:500; margin-top:6px;}
