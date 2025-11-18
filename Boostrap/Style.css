@@ -1,0 +1,11 @@
+:root {
+    --bs-primary: coral;
+    --bs-success: teal;
+    --bs-warning: #ffb347;
+    --bs-danger: #ff4d4d;
+}
+
+.custom-card img {
+    height: 200px;
+    object-fit: cover;
+}
